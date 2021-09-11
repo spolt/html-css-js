@@ -111,6 +111,11 @@ button{
     z-index: 99;
 }
 
+.header.fixed{
+    background-color: #ffffff;
+    position: fixed;
+}
+
 .header .brand-name{
 
     padding: 0 1.5rem;
@@ -126,8 +131,63 @@ button{
     transition: all 0.5s ease;
 }
 
+.header.fixed .brand-name a{
+    color: #000000;
+}
+
 .header .brand-name a:hover{
     color: #FF9800;
+}
+
+.header .nav-toggle{
+    width: 4rem;
+    height: 3.4rem;
+    border: 1px solid #ffffff;
+    border-radius: 3px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+}
+
+.header.fixed .nav-toggle{
+    border-color: #000000;
+}
+
+.header .nav-toggle span{
+    height: 1px;
+    display: block;
+    width: 1.6rem;
+    background-color: #ffffff;
+    position: relative;
+    transition: all 0.5s ease;
+}
+
+.header .nav-toggle span:before,
+.header .nav-toggle span:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 1px;
+    width: 100%;
+    background-color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.header.fixed .nav-toggle span,
+.header.fixed .nav-toggle span:before,
+.header.fixed .nav-toggle span:after{
+    background-color: #000000;
+}
+
+.header .nav-toggle span:before{
+    transform: translateY(-6px);
+}
+
+.header .nav-toggle span:after{
+    transform: translateY(6px);
 }
 
 .header .nav{
@@ -155,9 +215,15 @@ button{
     display: block;
 }
 
+.header.fixed .nav ul li a{
+    color: #000000;
+}
+
+.header.fixed .nav ul li a:hover,
 .header .nav ul li a:hover{
     color:#FF9800;
 }
+
 
 /* home-section */
 
@@ -332,8 +398,7 @@ margin-top: 3rem;
 .service-section .service-item{
     flex: 0 0 33.33%;
     max-width: 33.33%;
-    padding:0 1.5rem;
-    margin-bottom: 1.5rem;
+    padding:1.5rem;
 }
 
 .service-section .service-item-inner{
@@ -388,14 +453,13 @@ margin-top: 3rem;
 /* Work Section */
 
 .work-section{
-    padding: 5rem 0 0;
+    padding: 8rem 0 0;
 }
 
 .work-section .work-item{
     flex: 0 0 33.33%;
     max-width: 33.33%;
-    padding: 0 1.5rem;
-    margin-bottom: 3rem;
+    padding: 1.5rem;
 }
 
 .work-section .work-item-inner img{
@@ -552,7 +616,7 @@ margin-top: 3rem;
 /* Contact Section */
 
 .contact-section{
-    padding: 5rem 0 8rem;
+    padding: 8rem 0 8rem;
 }
 
 .contact-section .contact-img{
@@ -563,7 +627,7 @@ margin-top: 3rem;
 
 .contact-section .contact-img .img-box{
     padding: 20rem 0;
-    background-image: url('../img/contact-bg.jpg');
+    background-image: url('../img/material/contact-bg.jpg');
     background-position: center;
     background-size: cover;
 }
@@ -590,7 +654,6 @@ margin-top: 3rem;
 
 .contact-section .contact-form .form{
     background-color: #f3f2f1;
-    border: 1px solid red;
     padding: 55px 40px;
     margin-top: -150px;
 
