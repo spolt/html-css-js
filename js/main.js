@@ -37,7 +37,7 @@ $(document).ready(function(){
         $(".header .nav").slideToggle()
     })
     $(".header .nav a").click(function(){
-        if($(window).width() < 768){
+        if($(window).width() < 1025){
             $("header .nav").slideToggle();
         }
     })
