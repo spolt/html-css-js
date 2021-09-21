@@ -798,13 +798,13 @@ margin-top: 3rem;
 
 /* responsive */
 
-@media(min-width: 1025px){
+@media(min-width: 768px){
     .header .nav{
         display: block!important;
     }
 }
 
-@media(max-width: 1024px){
+@media(max-width: 767px){
     .header{
         padding: 7px 0;
     }
@@ -842,13 +842,9 @@ margin-top: 3rem;
     .about-section .about-img{
         margin-bottom: 3rem;
     }
-    .about-section .about-content{
-        flex: 0 0 65%;
-        max-width: 100%;
-    }
+    .about-section .about-content,
     .about-section .about-img {
-        padding-top: 1.5rem;
-        flex: 0 0 35%;
+        flex: 0 0 100%;
         max-width: 100%;
     }
     .service-section .service-item{
@@ -857,7 +853,7 @@ margin-top: 3rem;
     }
 }
 
-@media(max-width: 600px){
+@media(max-width: 575px){
     .home-section .home-content{
         text-align: center;
     }
@@ -868,11 +864,6 @@ margin-top: 3rem;
     .about-section .about-content .stats .stat-box{
         flex: 0 0 50%;
         max-width: 50%;
-    }
-    .about-section .about-content,
-    .about-section .about-img {
-        flex: 0 0 100%;
-        max-width: 100%;
     }
     .contact-section .contact-info .info-item,
     .contact-section .contact-form .form .input-group.left,
