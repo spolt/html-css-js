@@ -9,6 +9,7 @@ $(window).on("load",function(){
 
 $(document).ready(function(){
 
+<<<<<<< HEAD
     //jqueryvalidation
     $("form").validate({
         errorClass: "invalid",
@@ -31,12 +32,14 @@ $(document).ready(function(){
     //lazy load
     $("img").lazyload();
 
+=======
+>>>>>>> master
     //nav toggle
     $(".nav-toggle").click(function(){
         $(".header .nav").slideToggle()
     })
     $(".header .nav a").click(function(){
-        if($(window).width() < 1025){
+        if($(window).width() < 768){
             $("header .nav").slideToggle();
         }
     })
@@ -52,7 +55,7 @@ $(document).ready(function(){
     });
 
       // Add smooth scrolling to all links
-    $("a").on('click', function(event) {
+  $("a").on('click', function(event) {
 
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
