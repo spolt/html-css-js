@@ -41,6 +41,9 @@ button{
     justify-content: space-between;
 }
 
+.invalid{
+    color: red;
+}
 @keyframes ani01{
     0%{
         transform: rotate(0deg);

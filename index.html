@@ -226,25 +226,25 @@
         </div>
         <div class="row">
           <div class="contact-form">
-            <form class="form">
+            <form action="mailto:polat.semih1@outlook.com" method="post" enctype="text/plain" class="form">
               <div class="row">
                 <div class="left input-group">
                   <label>Ad Soyad</label>
-                  <input type="text" placeholder="Adınız Soyadınız" class="input-control">
+                  <input id="name" type="text" name="ad_soyad" placeholder="Adınız Soyadınız" class="input-control">
                 </div>
                 <div class="right input-group">
-                  <label>Email veya Telefon No</label>
-                  <input type="text" placeholder="Email veya Telefon Numaranız" class="input-control">
+                  <label>Telefon No</label>
+                  <input type="text" name="phone" placeholder="Telefon Numaranız" class="input-control">
                 </div>
               </div>
               <div class="row">
                 <div class="input-group">
                   <label>Mesaj</label>
-                  <textarea class="input-control" placeholder="Mesajınız" cols="30" rows="10"></textarea>
+                  <textarea class="input-control" name="yorum" placeholder="Mesajınız" cols="30" rows="10"></textarea>
                 </div>
               </div>
               <div class="form-btn">
-                <button type="button" class="btn btn-01">Mesaj Gönder</button>
+                <button type="submit" class="btn btn-01">Mesaj Gönder</button>
               </div>
             </form>
           </div>
@@ -317,5 +317,6 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/plugins.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
   </body>
 </html>
