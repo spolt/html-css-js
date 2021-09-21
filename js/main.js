@@ -8,8 +8,7 @@ $(window).on("load",function(){
 })
 
 $(document).ready(function(){
-
-<<<<<<< HEAD
+    
     //jqueryvalidation
     $("form").validate({
         errorClass: "invalid",
@@ -32,8 +31,7 @@ $(document).ready(function(){
     //lazy load
     $("img").lazyload();
 
-=======
->>>>>>> master
+
     //nav toggle
     $(".nav-toggle").click(function(){
         $(".header .nav").slideToggle()
