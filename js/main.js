@@ -9,6 +9,31 @@ $(window).on("load",function(){
 
 $(document).ready(function(){
 
+<<<<<<< HEAD
+    //jqueryvalidation
+    $("form").validate({
+        errorClass: "invalid",
+        errorElement: "em",
+        rules: {
+            ad_soyad: "required",
+            phone: "required"
+        },
+        messages: {
+            ad_soyad: "Lütfen ad soyad bilgisi giriniz.",
+            phone: "Lütfen iletişim bilgisi giriniz."
+        },
+        highlight: function(element) {
+            $(element).fadeOut(function() {
+              $(element).fadeIn();
+            });
+          }
+    });
+
+    //lazy load
+    $("img").lazyload();
+
+=======
+>>>>>>> master
     //nav toggle
     $(".nav-toggle").click(function(){
         $(".header .nav").slideToggle()
